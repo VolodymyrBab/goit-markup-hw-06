@@ -465,42 +465,64 @@
             </button>
             <p class="modal-form-p">Оставьте свои данные, мы вам перезвоним</p>
             <form class="modal-form">
-               <div>
+           
                     <label class="modal-form-field">
                         <span class="modal-form-input-text">Имя</span>
-                        <input type="text" 
-                        name="user_name" 
-                        class="modal-form-input" 
-                        required pattern="[a-zA-Zа-яА-Я]+$" 
-                        minlength="2"
-                        />
+                        <span class="modal-form-input-wrapper">
+                            <input type="text"
+                             name="user_name"
+                             class="modal-form-input" 
+                             required pattern="[a-zA-Zа-яА-Я]+$"
+                             minlength="2"
+                            />
+                            <svg class="modal-form-input-icon">
+                                <use href="./image/vector/form/form_icon.svg#icon-name">
+                                </use>
+                            </svg>
+                        </span>
+                        
+                       
                     </label>
                     <label class="modal-form-field">
                         <span class="modal-form-input-text">Телефон</span>
-                        <input type="tel" 
-                        name="user_phone" 
-                        class="modal-form-input" 
-                        required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-                        title="xxx-xxx-xx-xx" 
-                        />
+                         <span class="modal-form-input-wrapper">
+                            <input type="tel" 
+                             name="user_phone" 
+                             class="modal-form-input" 
+                             required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                             title="xxx-xxx-xx-xx" 
+                             />
+                            <svg class="modal-form-input-icon">
+                                <use href="./image/vector/form/form_icon.svg#icon-phone">
+                                </use>
+                            </svg>
+                        </span>
+                        
                     </label>
                     <label class="modal-form-field">
                         <span class="modal-form-input-text">Почта</span>
-                        <input type="email" 
-                        name="user_mail" 
-                        class="modal-form-input" 
-                        required 
-                        />
+                         <span class="modal-form-input-wrapper">
+                            <input type="email" 
+                            name="user_mail" 
+                            class="modal-form-input" 
+                            required 
+                            />
+                            <svg class="modal-form-input-icon">
+                                <use href="./image/vector/form/form_icon.svg#icon-mail">
+                                </use>
+                            </svg>
+                        </span>
+                       
                     </label>
                     <label class="modal-form-field">
                         <span class="modal-form-input-text">Комментарий</span>
                         <textarea 
                         class="modal-form-input-comment"
                          name="user_message" 
-                         placeholder="Введите текст">
-                        </textarea>
+                         placeholder="Введите текст"
+                         ></textarea>
                     </label>
-               </div>
+              
                 <input id="user-pol" 
                     name="user-pol"
                     type="checkbox"
