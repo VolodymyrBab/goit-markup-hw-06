@@ -72,7 +72,7 @@
 
      <section class="section2">
             <div class="detailes container">
-                <h2 class="section2-text" hidden>Особенности</h2>
+                <h2 class="section2-text visually-hidden" >Особенности</h2>
                 <ul class="section2-list list">
                     <li class="section2-item item">
                         <a href="#" class="section2-list-item-link">
@@ -453,21 +453,28 @@
             </div>
             <div class="social-futer">
                 <h3 class="social-futer-h3">Подпишитесь на рассылку</h3>
-                <label class="modal-form-field">
-                    <span class="modal-form-input-text">Почта</span>
-                    <span class="modal-form-input-wrapper">
-                        <input type="email" name="user_mail" class="modal-form-input" required />
-                        <svg class="modal-form-input-icon">
-                            <use href="./image/vector/form/form_icon.svg#icon-mail">
-                            </use>
-                        </svg>
+                <!-- <label class="-form-field">
+                    
+                    <span class="-form-input-wrapper">
+                        <input type="email" 
+                        name="user_mail" 
+                        class="-form-input"
+                        required 
+                        placeholder="E-mail"
+                         />
+                        
                     </span>
                 
                 </label>
-                <button class="modal-form-submit" type="submit">Подписаться</button>
+                <button class="modal-form-submit" type="submit">Подписаться
+                    <svg class="-form-input-icon" width="16" height="12">
+                        <use href="./image/vector/form/form_icon.svg#icon-telegram">
+                        </use>
+                    </svg>
+                </button> -->
             </div>
            
-        </div>          
+        </div> 
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
@@ -542,11 +549,12 @@
                 <input id="user-pol" 
                     name="user-pol"
                     type="checkbox"
-                    class="modal-form-check"
+                    class="modal-form-check visually-hidden"
                     
                  />
                 <label for="user-pol" class="modal-form-check-desc">
-                    Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a> 
+                    Соглашаюсь с рассылкой и принимаю&nbsp;
+                    <a href="">Условия договора</a> 
                 </label>
                 <button  class="modal-form-submit" type="submit">Отправить</button>
             </form>
