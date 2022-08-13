@@ -308,8 +308,8 @@ body {
 }
 
 .section3-text,
- .section4-text, 
- .section5-text {
+.section4-text, 
+.section5-text {
     margin-bottom: 50px;      
     font-weight: 700;
     font-size: 36px;
@@ -317,7 +317,7 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     
-     color: var(--primary-text-color-theme-light);
+    color: var(--primary-text-color-theme-light);
 }
 .section3-item-text{
     width: 370px;
@@ -365,8 +365,8 @@ body {
  }
 
  .contacts {
-     display: flex;
-     justify-content: left;
+    display: flex;
+    justify-content: left;
  }
 
 .adres-link {
@@ -409,9 +409,11 @@ body {
     padding-bottom: 20px;
     color: var(--primary-text-color-theme-dark);
 }
-.social-futer:not(:last-child) {
-
+.social-futer:first-child {
     margin-right: 70px;
+}
+.social-futer:last-child {
+    margin-left: auto;
 }
 
 /* portfolio */
@@ -436,8 +438,8 @@ body {
     background: #F5F4FA;
     color: var(--primary-text-color-theme-light);
     transition: color var(--trnsition-dur-and-func),
-            background var(--trnsition-dur-and-func),
-            box-shadow var(--trnsition-dur-and-func);
+    background var(--trnsition-dur-and-func),
+    box-shadow var(--trnsition-dur-and-func);
 }
 
 .portfolio-button:focus,
@@ -489,7 +491,7 @@ body {
     
     letter-spacing: 0.06em;
     
-     color: var(--primary-text-color-theme-light);
+    color: var(--primary-text-color-theme-light);
 }
 .uslugi-p {
     font-weight: 400;
@@ -838,4 +840,66 @@ flex-direction: column;
    
     border: 2px solid var(--accent-color);
     border-radius: 2px;
+}
+
+/* форма подписки */
+
+.subskrib-form{
+    display: flex;
+}
+.subskrib-form-field{
+    margin-right: 12px;
+}
+.subskrib-form-input{
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+
+    width: 324px;
+    height: 24px;
+    padding: 12px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: #2F303A;
+}
+.subskrib-form-input::placeholder{
+    color: rgba(255, 255, 255, 0.6);
+}
+.subskrib-form-input-wrapper{
+    display: block;
+    position: relative;
+}
+.subskrib-form-submit{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 29px;
+    padding-right: 29px;
+    /* margin-left: auto;
+    margin-right: auto; */
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+
+    display: flex;
+    align-items: center;
+    /* text-align: center; */
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    background-color: var(--accent-color);
+    color: var(--primary-text-color-theme-dark);
+    /* transition: color var(--trnsition-dur-and-func),
+    background-color var(--trnsition-dur-and-func); */
+}
+.subskrib-form-input-icon{
+    padding-left: 10px;
+    fill: #FFFFFF;
 }
